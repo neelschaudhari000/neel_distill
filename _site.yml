@@ -2,6 +2,8 @@ name: "neel_distill"
 title: "Neel Chaudhari"
 theme: "theme_neel.css"
 output_dir: "_site"
+base_url: https://neelchaudhari.netlify.app/
+repository_url: https://github.com/neelschaudhari000/neel_distill
 navbar:
   right:
     - text: "Home"

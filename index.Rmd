@@ -7,7 +7,7 @@ links:
   - label: '<i class="fab fa-linkedin fa-lg"></i> LinkedIn'
     url: "https://www.linkedin.com/in/neelschaudhari/"
   - label: '<i class="fas fa-envelope fa-lg"></i> Email'
-    url: "NC0787894@outlook.com"
+    url: "mailto:NC0787894@outlook.com"
 output:
   postcards::trestles
 site: distill::distill_website
@@ -61,6 +61,11 @@ In addition to these, I am teaching Statistics (basic statistics (mean, variance
 .columnname1 {
   font-size: 1.4rem; 
   font-weight: 600;
+  padding-left: 0rem;
+}
+.columnname2 {
+  font-size: 1.4rem; 
+  font-weight: 600;
   padding-left: 2.4rem;
 }
 .grad-item {
@@ -109,7 +114,7 @@ In addition to these, I am teaching Statistics (basic statistics (mean, variance
 ::: {}
 <span class = "columnname1"> Interest </span>
 
-<span class = "text">-  Mathematical Statistics</span>
+<span class = "text">- Mathematical Statistics</span>
 
 <span class = "text">- Data Analytics </span>
 
@@ -143,7 +148,7 @@ In addition to these, I am teaching Statistics (basic statistics (mean, variance
 2017 - 2020 <br> 
 <p class = "grad-location"> Gujarat University, Gujarat, India </p> </li>
 
-<span class = "columnname"> Experience </span>
+<span class = "columnname1"> Experience </span>
 
 <li class = "grad-item3"> Data Analytics Intern at Windsor Regional Hospital,
 2022 - present<br>
