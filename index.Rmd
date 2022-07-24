@@ -8,160 +8,21 @@ links:
     url: "https://www.linkedin.com/in/neelschaudhari/"
   - label: '<i class="fas fa-envelope fa-lg"></i> Email'
     url: "mailto:NC0787894@outlook.com"
+
 output:
-  postcards::trestles
+  postcards::jolla
 site: distill::distill_website
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-```
 
 ```{css, echo = FALSE}
 .text {
   font-size: 1.2rem;
 }
 .title{
-  font-size: 2.4rem;
-  font-weight: 600;
+  font-size: 1.4rem;
+  font-weight: 300;
 }
 ```
 
-
-
-<br>
-
-<span class = "title"> Welcome!!</span> 
-<span class = "text">  
-I have adequate skills to solve analytical problems using programming and visualization tools. Creating an interactive dashboard is my strength as it becomes easy for audiences or non-programming backgrownd people to understand the analytical concepts.</span> 
-
-<span class = "text"> 
-Although Data Analytics gives me everything to explore data, Mathematical Statistics has taught me basics and advanced concepts which are used in every analytical problems.</span>
-
-<span class = "text"> 
-Having these skills are fruitful for me to solve the real-world analytical problem at Windsor Regional Hospital. These skills also help me to complete my projects with ease.</span> 
-
-<span class = "text"> 
-In addition to these, I am teaching Statistics (basic statistics (mean, variance, correlation, covariance, etc.), advanced statistics (Distributions such as Normal distribution and t-distributions)) as well as Data Analytics (Exploratory Data Analysis, Data cleaning, Data Mining, Data Visualization using Rstudio, Python, SQL, and Tableau) at Varsity Tutor.</span>
-
-
-<br>
-
-
-```{css, echo = FALSE}
-.columnname {
-  font-size: 1.4rem; 
-  font-weight: 600;
-  padding-left: 2.4rem;
-}
-.columnname1 {
-  font-size: 1.4rem; 
-  font-weight: 600;
-  padding-left: 0rem;
-}
-.columnname2 {
-  font-size: 1.4rem; 
-  font-weight: 600;
-  padding-left: 2.4rem;
-}
-.grad-item {
-  font-size: 1.2rem;
-  list-style: none; 
-  background-image: url(gujaratuniversity.png); 
-  background-repeat: no-repeat;  
-  background-size: 4.2rem; 
-  padding-left: 5rem;
-}
-
-
-.grad-item1 {
-  font-size: 1.2rem;
-  list-style: none; 
-  background-image: url(stclair.png); 
-  background-repeat: no-repeat;  
-  background-size: 4.2rem; 
-  padding-left: 5rem;
-}
-.grad-item2{
-  font-size: 1.2rem;
-  list-style: none; 
-  background-image: url(varsity.png);
-  background-repeat: no-repeat;  
-  background-size: 4.2rem; 
-  padding-left: 5rem;
-}
-.grad-item3{
-  font-size: 1.2rem;
-  list-style: none; 
-  background-image: url(hospital.png);
-  background-repeat: no-repeat;  
-  background-size: 4.2rem; 
-  padding-left: 5rem;
-}
-.grad-location {
-  font-size: 1.0rem;
-  color: grey;
-}
-```
-
-
-:::: {style="display: grid; grid-template-columns: 40% 50%; grid-column-gap: 10px; line-height: 1.5rem;"}
-
-::: {}
-<span class = "columnname1"> Interest </span>
-
-<span class = "text">- Mathematical Statistics</span>
-
-<span class = "text">- Data Analytics </span>
-
-<span class = "text">- Data Science </span>
-
-<span class = "text">- Data Mining and Data Visualization </span>
-
-<span class = "text">- Reading Data Science books </span>
-
-<span class = "columnname1"> Programming </span>
- 
-<span class = "text">- Python </span>
- 
-<span class = "text">- R </span>
- 
-<span class = "text">- SQL </span>
- 
-
-
-:::
-
-::: {}
-<span class = "columnname"> Education </span>
-
-<ul>
- 
-<li class = "grad-item1"> Post Graduation in Data Analytics For Business,               
-2021 - 2022 <br>
-<p class = "grad-location"> St. Clair College, Ontario, Canada</p> </li>
-<li class = "grad-item">  Bachelor's degree in Mathematical Statistics,                 
-2017 - 2020 <br> 
-<p class = "grad-location"> Gujarat University, Gujarat, India </p> </li>
-
-<span class = "columnname1"> Experience </span>
-
-<li class = "grad-item3"> Data Analytics Intern at Windsor Regional Hospital,
-2022 - present<br>
-<p class = "grad-location"> Windsor Regional Hospital, Ontario, Canada</p> </li>
- 
-<li class = "grad-item2"> Tutor(Statistics and Data Analytics) at Varsity,
-2022 - present<br>
-<p class = "grad-location"> Ontario, Canada</p> </li>
-
-
-</ul>
-:::
-::::
-
-
-
+<span class = "title"> Data Analyst/Statistician</span> 

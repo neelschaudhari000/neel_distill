@@ -1,0 +1,38 @@
+---
+title: "Data-Driven Car Following Model using Python"
+description: |
+  The models predict Acceleration and calculate Subject Vehicle Trajectories. We have used multiple machine learning models in this project.
+author:
+  - name: Neel Chaudhari
+    url: {}
+date: 07-13-2022
+output:
+  distill::distill_article:
+    self_contained: false
+    highlight: kate
+    toc: true
+    toc_depth: 4
+preview: "figs/carfollowing.jpg"
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction and Links
+According to a report released by the research house Bernstein, the number of cars on the road is projected to reach two billion by 2040, especially in developing countries like China and India due to the rise in the population as well as an increase in GDP, and 25% of the collisions in Canada is rear-end collision. This problem calls for a more generic and realistic solution. Data-driven car following model can be used to solve this problem. 
+
+Many organizations, educational institutions, and individuals are working on different car-following models and many models are already present for use, but each model has its own limitations and can not be used in every situation as the driving condition changes in every part of the world. Most of the car following models available are assumption-based and not data-driven which has the problem of biasness, hence data-driven models when used in any simulation or in any automotive vehicle will give more accurate results compared to assumption-based models. These models can be used in Forward collision warning systems, Simulations for road construction, and planning to name a few. 
+
+## Why this project?
+Every year many papers are written on car following models which extensively talk about velocity prediction but do not talk about acceleration prediction. Very few of the papers discuss acceleration predictions and claim to have good RMSE but do not actually show the acceleration trajectory with respect to the actual values or show the RMSE value to do a fair comparison.  
+
+In our project, we have created Random Forest, KNN, and CNN models using NGSIM dataset and predict the acceleration of the vehicle and also show both RMSE as well as trajectory plots. 
+
+## Dataset Description
+The dataset used in this project is called Next Generation Simulation (NGSIM) and it is publicly available on the U.S. Department of Transportation website. The NGSIM dataset consists of 25 columns and 11.8 million rows of vehicle trajectory data which was captured using a network of synchronized digital video cameras on 4 different locations (US 101, I-80, Peachtree, and Lankershim). The data contains the location of a vehicle at every one-tenth of a second, which gives the exact position of each vehicle relative to other vehicles.  
+
+A total of 3 different types of vehicle data can be found in this dataset, namely Car, Truck, and Motorcycle. Most of the data were taken from the two freeways i.e., US 101 and I-80, and among the three vehicle types, data on Cars is more as compared to Trucks and Motorcycles. Therefore, we decided to work on only the Freeways. After the Preliminary analysis, we found that some vehicle IDs are present in more than one location meaning that the data from all four locations were taken separately and then merged in a single file. Hence, we separated the data based on location to carry out data cleaning and data transformation and then merge them back.  
+
+Thank you for your interest! If you'd like to talk more about this project, feel free to get in touch with me using any of the methods linked on my home page.
