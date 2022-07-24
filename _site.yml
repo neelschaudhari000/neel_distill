@@ -1,7 +1,6 @@
 name: "neel_distill"
 title: "Neel Chaudhari, Data Analytics/Statistician"
-description: |
-  &quot;Neel Chaudhari, Data Analytics/Statistician
+theme: "theme_neel.css"
 output_dir: "_site"
 navbar:
   right:
