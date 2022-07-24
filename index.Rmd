@@ -35,7 +35,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <span class = "title"> Welcome!!</span> 
 <span class = "text">  
-I am graduated recently from St. Clair College. Now, I have adequate skills to solve any analytical problem using programming and visualization tools. Creating an interactive dashboard is my strength as it becomes easy for audiences or non-programming backgrownd people to understand the analytical concepts.</span> 
+I graduated recently from St. Clair College. Now, I have adequate skills to solve any analytical problem using programming and visualization tools. Creating an interactive dashboard is my strength as it becomes easy for audiences or non-programming backgrownd people to understand the analytical concepts.</span> 
 
 <span class = "text"> 
 Although Data Analytics gives me everything to explore data, Mathematical Statistics has taught me basics and advanced concepts which are used in every analytical problems.</span>
