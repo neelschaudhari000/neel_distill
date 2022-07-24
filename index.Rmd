@@ -132,7 +132,7 @@ In addition to these, I am teaching Statistics (basic statistics (mean, variance
 :::
 
 ::: {}
-<span class = "columnname"> Education and Experience </span>
+<span class = "columnname"> Education </span>
 
 <ul>
  
@@ -143,7 +143,7 @@ In addition to these, I am teaching Statistics (basic statistics (mean, variance
 2017 - 2020 <br> 
 <p class = "grad-location"> Gujarat University, Gujarat, India </p> </li>
 
-<span class = "columnname"> Education and Experience </span>
+<span class = "columnname"> Experience </span>
 
 <li class = "grad-item3"> Data Analytics Intern at Windsor Regional Hospital,
 2022 - present<br>
