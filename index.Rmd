@@ -1,7 +1,6 @@
 ---
 title: "Neel Chaudhari, Data Analytics/Statistician"
-description: |
-  Welcome to the website. I hope you enjoy it!
+image: "NeelChaudhari.png"
 links:
   - label: '<i class="fab fa-github fa-lg"></i>'
     url: "https://github.com/neelschaudhari000"
