@@ -1,7 +1,14 @@
 ---
-title: "&quot;Neel Chaudhari, Data Analytics/Statistician"
+title: "Neel Chaudhari, Data Analytics/Statistician"
 description: |
   Welcome to the website. I hope you enjoy it!
+links:
+  - label: '<i class="fab fa-github fa-lg"></i>'
+    url: "https://github.com/neelschaudhari000"
+  - label: '<i class="fab fa-linkedin fa-lg"></i>'
+    url: "https://www.linkedin.com/in/neelschaudhari/"
+output:
+  postcards::trestles
 site: distill::distill_website
 ---
 
