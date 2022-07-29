@@ -121,7 +121,7 @@ code span.wa { color: #bf0303; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["Car-Following-Data-Driven-Model_files/anchor-4.2.2/anchor.min.js","Car-Following-Data-Driven-Model_files/bowser-1.9.3/bowser.min.js","Car-Following-Data-Driven-Model_files/distill-2.2.21/template.v2.js","Car-Following-Data-Driven-Model_files/header-attrs-2.14.3/header-attrs.js","Car-Following-Data-Driven-Model_files/jquery-3.6.0/jquery-3.6.0.js","Car-Following-Data-Driven-Model_files/jquery-3.6.0/jquery-3.6.0.min.js","Car-Following-Data-Driven-Model_files/jquery-3.6.0/jquery-3.6.0.min.map","Car-Following-Data-Driven-Model_files/popper-2.6.0/popper.min.js","Car-Following-Data-Driven-Model_files/tippy-6.2.7/tippy-bundle.umd.min.js","Car-Following-Data-Driven-Model_files/tippy-6.2.7/tippy-light-border.css","Car-Following-Data-Driven-Model_files/tippy-6.2.7/tippy.css","Car-Following-Data-Driven-Model_files/tippy-6.2.7/tippy.umd.min.js","Car-Following-Data-Driven-Model_files/webcomponents-2.0.0/webcomponents.js","figs/carfollowing.jpg","references.bib"]}
+  {"type":"character","attributes":{},"value":["Car-Following-Data-Driven-Model_files/anchor-4.2.2/anchor.min.js","Car-Following-Data-Driven-Model_files/bowser-1.9.3/bowser.min.js","Car-Following-Data-Driven-Model_files/distill-2.2.21/template.v2.js","Car-Following-Data-Driven-Model_files/header-attrs-2.14.3/header-attrs.js","Car-Following-Data-Driven-Model_files/jquery-3.6.0/jquery-3.6.0.js","Car-Following-Data-Driven-Model_files/jquery-3.6.0/jquery-3.6.0.min.js","Car-Following-Data-Driven-Model_files/jquery-3.6.0/jquery-3.6.0.min.map","Car-Following-Data-Driven-Model_files/popper-2.6.0/popper.min.js","Car-Following-Data-Driven-Model_files/tippy-6.2.7/tippy-bundle.umd.min.js","Car-Following-Data-Driven-Model_files/tippy-6.2.7/tippy-light-border.css","Car-Following-Data-Driven-Model_files/tippy-6.2.7/tippy.css","Car-Following-Data-Driven-Model_files/tippy-6.2.7/tippy.umd.min.js","Car-Following-Data-Driven-Model_files/webcomponents-2.0.0/webcomponents.js","figs/carfollowing.jpg","images/Car Following Terms.png","images/cleanup.png","images/highways.png","images/Human Activity.gif","images/Logo.png","images/Model Stats.png","images/NGSIM.png","images/Transformation.png","references.bib"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1520,26 +1520,257 @@ code span.wa { color: #bf0303; } /* Warning */
 </div>
 
 <div class="d-article">
-<div class="d-contents d-contents-float">
-<nav class="l-text toc figcaption" id="TOC">
-<h3>Contents</h3>
+<p align="center">
+<img src="images/Car%20Following%20Terms.png" alt="Car Following Terms"> width=“70%” height=“70%”&gt;
+</p>
+<!-- TABLE OF CONTENTS -->
+<h2 id="table-of-contents">
+📘 Table of Contents
+</h2>
+<details open="open">
+<summary>
+Table of Contents
+</summary>
+<ol>
+<li>
+<a href="#about-the-project"> ➤ About The Project</a>
 <ul>
-<li><a href="#introduction-and-links">Introduction and Links</a></li>
-<li><a href="#why-this-project">Why this project?</a></li>
-<li><a href="#dataset-description">Dataset Description</a></li>
+<li>
+<a href="#Problem-statement">Problem Statement</a>
+</li>
+<li>
+<a href="#Proposed-Solution">Proposed Solution</a>
+</li>
 </ul>
-</nav>
-</div>
-<h2 id="introduction-and-links">Introduction and Links</h2>
-<p>According to a report released by the research house Bernstein, the number of cars on the road is projected to reach two billion by 2040, especially in developing countries like China and India due to the rise in the population as well as an increase in GDP, and 25% of the collisions in Canada is rear-end collision. This problem calls for a more generic and realistic solution. Data-driven car following model can be used to solve this problem.</p>
-<p>Many organizations, educational institutions, and individuals are working on different car-following models and many models are already present for use, but each model has its own limitations and can not be used in every situation as the driving condition changes in every part of the world. Most of the car following models available are assumption-based and not data-driven which has the problem of biasness, hence data-driven models when used in any simulation or in any automotive vehicle will give more accurate results compared to assumption-based models. These models can be used in Forward collision warning systems, Simulations for road construction, and planning to name a few.</p>
-<h2 id="why-this-project">Why this project?</h2>
-<p>Every year many papers are written on car following models which extensively talk about velocity prediction but do not talk about acceleration prediction. Very few of the papers discuss acceleration predictions and claim to have good RMSE but do not actually show the acceleration trajectory with respect to the actual values or show the RMSE value to do a fair comparison.</p>
-<p>In our project, we have created Random Forest, KNN, and CNN models using NGSIM dataset and predict the acceleration of the vehicle and also show both RMSE as well as trajectory plots.</p>
-<h2 id="dataset-description">Dataset Description</h2>
-<p>The dataset used in this project is called Next Generation Simulation (NGSIM) and it is publicly available on the U.S. Department of Transportation website. The NGSIM dataset consists of 25 columns and 11.8 million rows of vehicle trajectory data which was captured using a network of synchronized digital video cameras on 4 different locations (US 101, I-80, Peachtree, and Lankershim). The data contains the location of a vehicle at every one-tenth of a second, which gives the exact position of each vehicle relative to other vehicles.</p>
-<p>A total of 3 different types of vehicle data can be found in this dataset, namely Car, Truck, and Motorcycle. Most of the data were taken from the two freeways i.e., US 101 and I-80, and among the three vehicle types, data on Cars is more as compared to Trucks and Motorcycles. Therefore, we decided to work on only the Freeways. After the Preliminary analysis, we found that some vehicle IDs are present in more than one location meaning that the data from all four locations were taken separately and then merged in a single file. Hence, we separated the data based on location to carry out data cleaning and data transformation and then merge them back.</p>
-<p>Thank you for your interest! If you’d like to talk more about this project, feel free to get in touch with me using any of the methods linked on my home page.</p>
+</li>
+<li>
+<a href="#prerequisites"> ➤ Prerequisites</a>
+</li>
+<li>
+<a href="#dataset"> ➤ Dataset</a>
+</li>
+<li>
+<a href="#roadmap"> ➤ Roadmap</a>
+</li>
+<li>
+<a href="#preprocessing"> ➤ Preprocessing</a>
+<ul>
+<li>
+<a href="#Data-Cleanup">Data Cleanup</a>
+</li>
+<li>
+<a href="#Data-Transormation">Data Transormation</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#results-and-discussion"> ➤ Results and Discussion</a>
+</li>
+<li>
+<a href="#TroubleShoot"> ➤ TroubleShoot</a>
+</li>
+<li>
+<a href="#contributors"> ➤ Contributors</a>
+</li>
+</ol>
+</details>
+<p><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" /></p>
+<!-- ABOUT THE PROJECT -->
+<h2 id="about-the-project">
+✎ About The Project
+</h2>
+<p align="justify">
+This project aims to understand and explore trajectories of various Car Following Models that predict Acceleration. The raw NGSIM data will be preprocessed to cleanup bad data and filter only valid pairs that would help train the model on I-80 and US-101 Highways.
+The goal is to compare and evaluate the performance of different Models (Random Forest, k Nearest Neighbors, and CNN) and discuss the trajectories along with their R^2 and RMSE.
+</p>
+<!-- PRE-PROCESSED DATA -->
+<h2 id="Problem-statement">
+💠 Problem Statement
+</h2>
+<p align="justify">
+<ul>
+<li>Very few data driven models predict acceleration accurately.</li>
+<li>Even with good RMSE scores, the trajectories do not match or aren’t displayed.</li>
+<li>The papers either falsely claim good acceleration predictions or completely avoid mentioning it.</li>
+</ul>
+</p>
+<!-- PRE-PROCESSED DATA -->
+<h2 id="Proposed-Solution">
+💠 Proposed Solution
+</h2>
+<p align="justify">
+<ul>
+<li>Create and compare Data Driven car following model using NGSIM dataset.</li>
+<li>Display and compare trajectories along with R2 and RMSE.</li>
+</ul>
+</p>
+<p><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" /></p>
+<!-- PREREQUISITES -->
+<h2 id="prerequisites">
+🍴 Prerequisites
+</h2>
+<p><a href="https://www.python.org/"><img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg" alt="made-with-python" /></a> <br>
+<a href="https://jupyter.org/try"><img src="https://img.shields.io/badge/Made%20for-Jupyter-orange?style=for-the-badge&amp;logo=Jupyter" alt="Made withJupyter" /></a> <br>
+<a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/Made%20with-VSCode-1f425f.svg" alt="made-with-VSCode" /></a> <br></p>
+<!--This project is written in Python programming language. <br>-->
+<p>The following open source packages are used in this project:
+* Numpy
+* Pandas
+* TensorFlow
+* Keras
+* Matplotlib
+* Sklearn
+* pathlib
+* random
+* seaborn
+* pickle
+* streamlit</p>
+<p><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" /></p>
+<!-- DATASET -->
+<h2 id="dataset">
+💾 Dataset
+</h2>
+<p>
+<p>The dataset used in this project is called * Next Generation Simulation (NGSIM) * and it is publicly available on the U.S. Department of Transportation website. The NGSIM dataset consists of 25 columns and 11.8 million rows of vehicle trajectory data which was captured using a network of synchronized digital video cameras on 4 different locations (US 101, I-80, Peachtree, and Lankershim). The data contains the location of a vehicle at every one-tenth of a second, which gives the exact position of each vehicle relative to other vehicles.
+A total of 3 different types of vehicle data can be found in this dataset, namely Car, Truck, and Motorcycle. Most of the data were taken from the two freeways i.e., US 101 and I-80, and among the three vehicle types, data on Cars is more as compared to Trucks and Motorcycles. Therefore, we decided to work on only the Freeways. After the Preliminary analysis, we found that some vehicle IDs are present in more than one location meaning that the data from all four locations were taken separately and then merged in a single file. Hence, we separated the data based on location to carry out data cleaning and data transformation and then merge them back.</p>
+<p align="center">
+<img src="images/NGSIM.png" alt="NGSIM" display="inline-block" width="80%" height="50%">
+</p>
+<p align="center">
+<img src="images/highways.png" alt="highways" display="inline-block" width="80%" height="70%">
+</p>
+<p><em>The NGSIM dataset is publicly available. Please refer to the <a href="https://www.opendatanetwork.com/dataset/data.transportation.gov/8ect-6jqj">Link</a></em></p>
+</p>
+<p><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" /></p>
+<!-- ROADMAP -->
+<h2 id="roadmap">
+⛙ Roadmap
+</h2>
+<p align="justify">
+We trained three models namely k-Nearest Neighbors, Random Forest, and CNN to predict Acceleration for Subject Vehicle and find rest of the trajectory.
+The goals of this project include the following:
+<ol>
+<li>
+<p align="justify">
+Clean and Transform the NGSIM Data
+</p>
+</li>
+<li>
+<p align="justify">
+Train Random Forest, KNN and CNN on same Train Data.
+</p>
+</li>
+<li>
+<p align="justify">
+Compare R2 and RMSE for the models.
+</p>
+</li>
+<li>
+<p align="justify">
+Validate Vehicle Trajectories and compare with R2 and RMSE outcomes.
+</p>
+</li>
+</ol>
+</p>
+<p><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" /></p>
+<!-- PREPROCESSING -->
+<h2 id="preprocessing">
+🔨 Preprocessing
+</h2>
+<p align="justify">
+<p>The NGSIM (Next Generation Simulation) dataset includes vehicle trajectory details along with the information of Lead and Following vehicle IDs. Even though the dataset has been processed by the Transportation department there are quite a few instances of Bad Data and vehicle trajectories which wont help in training for a good Car following model. Thus, we have preprocessed the data as per below:</p>
+<p><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" /></p>
+<!-- PRE-PROCESSED DATA -->
+<h2 id="Data-Cleanup">
+💠 Data-Cleanup
+</h2>
+<p align="justify">
+<p>Below are the cleanup tasks that have been performed:</p>
+<ul>
+<li>Remove all Vehicles which have bad Vehicle Length and Type. i.e. same vehicle having two vehicle Types in different pair information.
+<ul>
+<li>Remove first 5 seconds for a Pair when Lead Vehicle is overtaking. Last 5 from the pair which the vehicle is leaving(same vehicle was Subject in that scneario).</li>
+<li>Remove Lane 4 and above as they are shoulders/ramps and exits.</li>
+<li>Remove trajectories which are less than 30 seconds.</li>
+<li>Remove vehicles with Time headway greater than 10 seconds.</li>
+</ul></li>
+</ul>
+</p>
+<p align="center">
+<img src="images/cleanup.png" alt="cleanup" display="inline-block" width="80%" height="100%">
+</p>
+<p><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" /></p>
+<h2 id="Data-Transormation">
+🔶 Data Transformation
+</h2>
+<p align="justify">
+<p>Below are the transformation steps that have been followed:</p>
+<ul>
+<li>Map Subject and Lead Vehicle information to have them on the same row.
+<ul>
+<li>Convert the Feet information to Metric Metres.</li>
+<li>Convert the Front - Front Space and Time Headway details to Lead Vehicle Rear Bumper to Subject Vehicle Front Bumper.</li>
+<li>Create per pair timing.</li>
+</ul></li>
+</ul>
+</p>
+<p align="center">
+<img src="images/Transformation.png" alt="Transformation" display="inline-block" width="80%" height="100%">
+</p>
+<p><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" /></p>
+<!-- RESULTS AND DISCUSSION -->
+<h2 id="results-and-discussion">
+🔍 Results and Discussion
+</h2>
+<p align="justify">
+The overall accuracy score of personal and impersonal models are shown in the following tables. Some of the results we observed are similar to the results obtained by Weiss et.al and they are discussed below: <br>
+</p>
+<p align="justify">
+<ul>
+<li>
+Random Forest with 150 Regressors had the best Trajectory.<br>
+</li>
+<li>
+KNN has the best results at hand with limited resources i.e. Local Machine.
+</li>
+<li>
+CNN has best R2 and RMSE but bad trajectories and missed prediction scales.
+</li>
+<li>
+All three models are able to meet the trajectory oscillations.
+</li>
+</ul>
+</p>
+<p align="center">
+<img src="images/Model%20Stats.png" alt="Stats and Model Details" width="75%" height="75%">
+</p>
+<p><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" /></p>
+<p><img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" /></p>
+<!-- CONTRIBUTORS -->
+<h2 id="contributors">
+📜 Contributors
+</h2>
+<p>
+<p>🎓 <i>All participants in this project are Student of Post Graduate Diploma in <a href="https://www.stclaircollege.ca/programs/data-analytics-business">Data Analytics for Business</a> <b>@</b> <a href="https://www.stclaircollege.ca/">St Clair College</a></i> <br> <br></p>
+<p>👦 <b>Vineet Dhamija</b> <br>
+      Email: <a>VD17@myscc.ca</a> <br>
+      GitHub:
+<a href="https://github.com/VineetDhamija"><span class="citation" data-cites="VineetDhamija">(<a href="#ref-VineetDhamija" role="doc-biblioref"><strong>VineetDhamija?</strong></a>)</span></a> <br></p>
+<p>👦 <b>Neel Chaudhari</b> <br>
+      Email: <a>NC57@myscc.ca</a> <br>
+      GitHub:
+<a href="https://github.com/neelschaudhari000"><span class="citation" data-cites="neelschaudhari000">(<a href="#ref-neelschaudhari000" role="doc-biblioref"><strong>neelschaudhari000?</strong></a>)</span></a> <br></p>
+<p>👦 <b>Rakesh Singh</b> <br>
+      Email: <a>rs334@myscc.ca</a> <br>
+      GitHub:
+<a href="https://github.com/rakesh894"><span class="citation" data-cites="rakesh894">(<a href="#ref-rakesh894" role="doc-biblioref"><strong>rakesh894?</strong></a>)</span></a> <br></p>
+<p>👦 <b>Umair Durrani</b> <br>
+      Email: <a>UDURRANI@stclaircollege.ca</a> <br>
+      GitHub:
+<a href="https://github.com/durraniu"><span class="citation" data-cites="durraniu">(<a href="#ref-durraniu" role="doc-biblioref"><strong>durraniu?</strong></a>)</span></a> <br></p>
+</p>
+<p><br>
+✤ <i>This was the final project for the course DAB402- Capstone (Summer 2022), at <a href="https://www.stclaircollege.ca/">St Clair College</a><i></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
